@@ -5,6 +5,8 @@ import com.example.demo.Service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("/api/user")
 @RequiredArgsConstructor
@@ -14,6 +16,11 @@ public class UserController {
     @PostMapping("/register")
     public Users userRegister(@RequestBody Users users) {
         return userService.userRegister(users);
+    }
+
+    @GetMapping
+    public List<Users> getUsers() {
+        return userService.getUsers();
     }
 
     @GetMapping("/{id}")
