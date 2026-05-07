@@ -16,7 +16,7 @@ public class TransactionController {
     private final TransactionService transactionService;
 
     @PostMapping
-    public Transactions saveTransaction(@RequestBody UserTransactionDTO userTransactionDTO) {
+    public Object saveTransaction(@RequestBody UserTransactionDTO userTransactionDTO) {
         return transactionService.saveTransaction(userTransactionDTO);
     }
 
