@@ -13,6 +13,6 @@ public class Users {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
     private String username;
-    @JsonIgnore
+   @JsonIgnore
     private String password;
 }
