@@ -15,14 +15,14 @@ public class DemoApplication {
     }
 }
 
-@RestController
-@RequestMapping("/api")
-@Slf4j
-
-class temp {
-    @GetMapping
-    public String hello() {
-        log.info("This is just a {}", "Info");
-        return "Hello World";
-    }
-}
+//@RestController
+//@RequestMapping("/api")
+//@Slf4j
+//
+//class temp {
+//    @GetMapping
+//    public String hello() {
+//        log.info("This is just a {}", "Info");
+//        return "Hello World";
+//    }
+//}
